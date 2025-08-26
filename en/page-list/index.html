@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title>Page list - Digital Accessibility Toolkit</title>
+  <title>Page list- Digital Accessibility Toolkit</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta name="description" content="List of all the pages found on the Digital Accessibility Toolkit website.">
-  <meta data-source="./src/main/en/page-list.njk" />
-  <link rel="alternate" hreflang="fr" href="../../fr/liste-des-pages/index.html" />
+  <meta name="source-file" content="./src/main/en/page-list.njk">
+  <link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/liste-des-pages/index.html" />
   <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
-  <link rel="stylesheet" href="../../css/da11yn.css">
+  <link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css">
   <!-- Meta tags -->
   <meta name="author" content="Government of Canada" />
   <meta name="dcterms.title" content="Page list" />
@@ -21,19 +21,18 @@
   <meta name="dcterms.creator" content="Government of Canada">
   <meta name="dcterms.language" content="en" />
   <meta name="dcterms.created" content="2023-08-01">
-  <meta name="dcterms.modified" content="2024-09-16">
+  <meta name="dcterms.modified" content="2023-11-27">
   <meta name="dcterms.subject" content="" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
   <script>
     (function(w) {
       "use strict";
-      var dl = "dataLayer";
-      if (w.location.hostname === "a11y.canada.ca" || w.location.hostname === "deploy-preview-335--a11ycanada.netlify.app") {
-        w[dl] = w[dl] || [];
+      if (w.location.hostname === "a11y.canada.ca") {
+        w.dataLayer = w.dataLayer || [];
         w.gtag = function() {
-          w[dl].push(arguments);
-        }
+          w.dataLayer.push(arguments);
+        };
         w.gtag('js', new Date());
         w.gtag('config', 'G-SM9MSHWDVN');
       }
@@ -60,7 +59,7 @@
           <h2 class="wb-inv">Language selection</h2>
           <ul class="list-inline mrgn-bttm-0">
             <li>
-              <a lang="fr" hreflang="fr" href="../../fr/liste-des-pages/index.html">
+              <a lang="fr" hreflang="fr" href="/gc-da11yn.github.io/fr/liste-des-pages/">
                 <span class="hidden-xs" translate="no">Français</span>
                 <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"> fr</abbr>
               </a>
@@ -70,7 +69,7 @@
         <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
           <a href="https://www.canada.ca/en.html" property="url">
             <img src="https://www.canada.ca/etc/designs/canada//wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" property="logo" />
-            <span class="wb-inv"> / <span lang="fr">Government of Canada</span></span>
+            <span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span></span>
           </a>
           <meta property="name" content="Government of Canada">
           <meta property="areaServed" typeof="Country" content="Canada" />
@@ -167,7 +166,7 @@
           </li>
           <!-- Second breadcrumb: Locale-based home link -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/">Digital Accessibility Toolkit</a>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</a>
             <meta property="position" content="2">
           </li>
           <!-- Additional breadcrumbs based on tags and subjects -->
@@ -181,7 +180,7 @@
     <div class="home">
       <div class="container p-0 p-sm-3">
         <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-          <h1 property="name" id="wb-cont"> Page list </h1>
+          <h1 property="name" id="wb-cont">Page list </h1>
           <p>List of all the pages found on the Digital Accessibility Toolkit website.</p>
         </div>
       </div>
@@ -220,6 +219,10 @@
           </div>
         </div>
         <div class="wb-eqht-grd row wb-tagfilter-items">
+          <section class="col-md-6" data-wb-tags=" home">
+            <h2 class="h4"><a href="/en/">Digital Accessibility Toolkit</a></h2>
+            <p>Welcome to the Digital Accessibility Toolkit. We offer a variety of learning materials and resources to help you learn and implement accessibility in your digital projects.</p>
+          </section>
           <section class="col-md-6" data-wb-tags=" main">
             <h2 class="h4"><a href="/en/accessibility-fundamentals/">Accessibility Fundamentals</a></h2>
             <p>Discover the principles behind accessible digital products and services. These principles remove barriers for people living with disabilities and ensures ease of use for all.</p>
@@ -228,13 +231,17 @@
             <h2 class="h4"><a href="/en/accessibility-in-your-role/">Accessibility in your role</a></h2>
             <p>We all have a role to play in accessibility. Learn more about job-specific accessibility tips and how to integrate them into your day-to-day work.</p>
           </section>
+          <section class="col-md-6" data-wb-tags="accessibilityInTheGovernmentOfCanada procurement,updatesMain notLanding">
+            <h2 class="h4"><a href="/en/accessibility-remediation-roadmap-template/">Accessibility remediation roadmap template</a></h2>
+            <p>This Accessibility Remediation Roadmap template is designed primarily for use in procurements or projects where accessibility conformance is required to be reached over time. The template outlines the essential information the Government of Canada would expect in an Accessibility Remediation Roadmap to understand and address deficiencies listed in an Accessibility Conformance Report (ACR).</p>
+          </section>
           <section class="col-md-6" data-wb-tags=" accessibilityInTheGovernmentOfCanada">
             <h2 class="h4"><a href="/en/accessibility-standards/">Accessibility standards</a></h2>
             <p>Stay up to date on all the latest accessibility standards and regulations in the government.</p>
           </section>
           <section class="col-md-6" data-wb-tags="howTos testYourProducts notLanding">
             <h2 class="h4"><a href="/en/accessibility-testing-101/">Accessibility Testing 101</a></h2>
-            <p>For anyone wanting to create accessible content, we encourage you to use automated accessibility testing tools. These testing tools will help content creators as they build their content by finding errors and offering suggestions to improve the accessibility of their product, application or web site. On this page a list of recommended accessibility testing tools has been made available</p>
+            <p>For anyone wanting to create accessible content, we encourage you to use automated accessibility testing tools. These testing tools will help content creators as they build their content by finding errors and offering suggestions to improve the accessibility of their product, application or web site. On this page a list of recommended accessibility testing tools has been made available.</p>
           </section>
           <section class="col-md-6" data-wb-tags="howTos createDocument,microsoft365 notLanding">
             <h2 class="h4"><a href="/en/accessible-excel-workbooks-in-microsoft-365/">Accessible Excel workbooks in Microsoft 365</a></h2>
@@ -307,10 +314,6 @@
           <section class="col-md-6" data-wb-tags="howTos createWebContent notLanding">
             <h2 class="h4"><a href="/en/captioning-checklist/">Captioning Checklist</a></h2>
             <p>Making sure you did not forget anything with your captions.</p>
-          </section>
-          <section class="col-md-6" data-wb-tags="howTos accessibleVirtualEvents notLanding">
-            <h2 class="h4"><a href="/en/cart-services-and-sign-language-interpreters/">CART Services and Sign Language Interpreters</a></h2>
-            <p>The most common accommodations for meetings or events are computer-assisted real-time translation (CART) and sign language interpretation services (SLI).</p>
           </section>
           <section class="col-md-6" data-wb-tags="accessibilityFundamentals aboutDisabilities notLanding">
             <h2 class="h4"><a href="/en/cognitive-disabilities/">Cognitive Disabilities</a></h2>
@@ -392,6 +395,10 @@
             <h2 class="h4"><a href="/en/global-accessibility-standards/">Global Accessibility Standards</a></h2>
             <p>A set of guidelines to ensure digital content is accessible worldwide for people living with disabilities and frameworks for creating accessible digital products, services, and more.</p>
           </section>
+          <section class="col-md-6" data-wb-tags="accessibilityInTheGovernmentOfCanada procurement,updatesMain notLanding">
+            <h2 class="h4"><a href="/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/">Guide for Including Accessibility in Information and Communication Technology (ICT) Related Procurement</a></h2>
+            <p>The framework for integrating accessibility into Information and Communication Technology (ICT)-related procurements within the Government of Canada (GC) emphasizes leveraging the EN 301 549 standard to ensure inclusivity and usability across ICT products and services, exceeding the minimum requirements of WCAG 2.1. Designed for GC departments, agencies, and suppliers, it outlines practical steps, roles, and resources to promote accessibility, aligning with the Accessible Canada Act and fostering a barrier-free digital environment.</p>
+          </section>
           <section class="col-md-6" data-wb-tags="howTos createDocument">
             <h2 class="h4"><a href="/en/how-to-create-accessible-documents-in-microsoft-365/">How to create accessible documents in Microsoft 365</a></h2>
             <p>Accessible practices for digital document creation.</p>
@@ -401,12 +408,12 @@
             <p>Accessible practices for digital document creation in Office 2016.</p>
           </section>
           <section class="col-md-6" data-wb-tags=" main">
-            <h2 class="h4"><a href="/en/how-tos/">How to’s</a></h2>
-            <p>Tips and core steps to help make all your digital products and content, such as documents, meetings, accessible.</p>
+            <h2 class="h4"><a href="/en/how-tos/">How-tos</a></h2>
+            <p>Tips and core steps to help make all your digital products and content, such as documents and meetings, accessible.</p>
           </section>
           <section class="col-md-6" data-wb-tags="accessibilityInTheGovernmentOfCanada procurement notLanding">
             <h2 class="h4"><a href="/en/information-and-communication-technology-ict-accessibility-requirements/">Information and Communication Technology (ICT) Accessibility Requirements</a></h2>
-            <p>This page is to share some of the work that Shared Services Canada (SSC) has done for the piloting of the EN 301 549 V3.2.1 (2021-03) Harmonised European Standard Accessibility requirements for ICT products and services. This is not a full copy / paste / translation of either the EN 301 549 (2021) or Web Content Accessibility Guidelines (WCAG) 2.1.</p>
+            <p>This page is to share some of the work that Shared Services Canada (SSC) has done for the piloting of the CAN/ASC - EN 301 549:2024 / EN 301 549 V3.2.1 (2021-03) Harmonised European Standard Accessibility requirements for ICT products and services. This is not a full copy / paste / translation of the CAN/ASC - EN 301 549:2024/ EN 301 549 (2021) or Web Content Accessibility Guidelines (WCAG) 2.1.</p>
           </section>
           <section class="col-md-6" data-wb-tags="howTos createWebContent notLanding">
             <h2 class="h4"><a href="/en/introduction-to-accessibility-requirements-for-audio-video/">Introduction to accessibility requirements for audio-video</a></h2>
@@ -416,7 +423,7 @@
             <h2 class="h4"><a href="/en/language-of-audiovideo-content/">Language of Audio/Video Content</a></h2>
             <p>When to use sign language interpretation and bilingual videos, tools and samples of accessible videos.</p>
           </section>
-          <section class="col-md-6" data-wb-tags=" main,updatesMain notLanding">
+          <section class="col-md-6" data-wb-tags=" main notLanding">
             <h2 class="h4"><a href="/en/learning-and-development/">Learning and Development</a></h2>
             <p>Discover a curated collection of learning products to enhance your understanding of accessibility. Whether you&#39;re a developer, designer, or enthusiast, explore our links to courses, tutorials, and tools. Join us in creating a more inclusive digital world.</p>
           </section>
@@ -427,10 +434,6 @@
           <section class="col-md-6" data-wb-tags=" howTos,updatesMain notLanding">
             <h2 class="h4"><a href="/en/making-accessible-emails/">Making Accessible Emails</a></h2>
             <p>Accessible email is important for people with disabilities but also for everyone. Find out how to create an accessible email in outlook.</p>
-          </section>
-          <section class="col-md-6" data-wb-tags="accessibilityInTheGovernmentOfCanada procurement notLanding">
-            <h2 class="h4"><a href="/en/mapping-between-revised-section-508-and-en-301-549-2014-2018-2019-and-2021/">Mapping between Revised Section 508 and EN 301 549 (2014, 2018, 2019 and 2021)</a></h2>
-            <p>As the EN 301 549 standards continue to evolve and release updates, this document shows the progression of the EN 301 549 standard from 2014 through the proceeding updates of 2018, 2019 and 2021. This information is important as the Government of Canada (GC) is moving towards adopting the EN 301 549 (2021) as its accessibility standard for ICT. The GC, as part of the solicitation process, may ask suppliers to provide accessibility conformance reports based on the Voluntary Product Accessibility Template (VPAT®). Each VPAT® is based on a specific technical standard – Revised Section 508, EN 301 549, or Web Content Accessibility Guidelines (WCAG). Suppliers, technical authorities and contracting authorities need to understand the differences between these standards to ensure that the accessibility requirements are properly addressed.</p>
           </section>
           <section class="col-md-6" data-wb-tags="howTos createDocument notLanding">
             <h2 class="h4"><a href="/en/microsoft-document-compliance-checklist/">Microsoft document compliance checklist</a></h2>
@@ -462,7 +465,7 @@
           </section>
           <section class="col-md-6" data-wb-tags=" aboutUs notLanding">
             <h2 class="h4"><a href="/en/research-on-our-target-audience/">Research on our target audience</a></h2>
-            <p>The main goal of creating these personas was to better understand our target audience. By developing a greater understanding of our users. By developing a greater understanding of our users, we would be able to build a responsive site architecture for all existing and future content hosted on the Digital Accessibility Toolkit’s website.</p>
+            <p>By developing a greater understanding of our users, we hope to build a responsive site architecture for all existing and future content hosted on the Digital Accessibility Toolkit’s website.</p>
           </section>
           <section class="col-md-6" data-wb-tags=" main">
             <h2 class="h4"><a href="/en/resources-and-tools/">Resources and Tools</a></h2>
@@ -493,16 +496,16 @@
             <p>Learn how to identify accessibility issues early and throughout the development process, when they are easier to address.</p>
           </section>
           <section class="col-md-6" data-wb-tags="howTos,createDocument msTips notLanding">
+            <h2 class="h4"><a href="/en/tip-sheet-for-microsoft-outlook/">Tip sheet for Microsoft Outlook</a></h2>
+            <p>Simple reference for creating accessible emails in Outlook.</p>
+          </section>
+          <section class="col-md-6" data-wb-tags="howTos,createDocument msTips notLanding">
             <h2 class="h4"><a href="/en/tip-sheet-for-microsoft-powerpoint-presentation/">Tip sheet for Microsoft PowerPoint Presentation</a></h2>
             <p>Easily reference accessible best practices for PowerPoint creation.</p>
           </section>
           <section class="col-md-6" data-wb-tags="howTos,createDocument msTips notLanding">
             <h2 class="h4"><a href="/en/tip-sheet-for-microsoft-word/">Tip sheet for Microsoft Word</a></h2>
             <p>Quick reference to accessible best practices for Word documents.</p>
-          </section>
-          <section class="col-md-6" data-wb-tags="howTos,createDocument msTips notLanding">
-            <h2 class="h4"><a href="/en/tip-sheet-for-outlook/">Tip sheet for Outlook</a></h2>
-            <p>Simple reference for creating accessible emails in Outlook.</p>
           </section>
           <section class="col-md-6" data-wb-tags=" createDocument,updatesMain">
             <h2 class="h4"><a href="/en/tip-sheets-for-microsoft-office/">Tip sheets for Microsoft office</a></h2>
@@ -538,7 +541,19 @@
           </section>
           <section class="col-md-6" data-wb-tags="howTos testYourProducts notLanding">
             <h2 class="h4"><a href="/en/web-accessibility-checklist/">Web Accessibility Checklist</a></h2>
-            <p>Checklist to verify the web page content if it is accessible or not</p>
+            <p>Checklist to verify the web page content if it is accessible or not.</p>
+          </section>
+          <section class="col-md-6" data-wb-tags=" aboutUs">
+            <h2 class="h4"><a href="/en/website-usage-analytics-2024/">Website usage analytics - 2024</a></h2>
+            <p>Provides a comprehensive overview of website usage data for the year 2024, including the number of visits, users, pageviews, and bounce rates. This page highlights key insights such as the most frequently used devices and the top countries where users accessed the site throughout the year. The archived data offers valuable insights into user behavior and trends over 2024, helping us analyze past interactions and enhance the website experience.</p>
+          </section>
+          <section class="col-md-6" data-wb-tags=" aboutUs">
+            <h2 class="h4"><a href="/en/website-usage-analytics-data-view/">Website usage analytics - Data view</a></h2>
+            <p>Provides an overview of website usage data, such as the number of visits, users, pageviews, and bounce rates. It also highlights the most frequently used devices and the top countries where users visit the site. The data is updated regularly to reflect the latest activity, helping us understand how people interact with the website and improve the overall experience.</p>
+          </section>
+          <section class="col-md-6" data-wb-tags=" aboutUs">
+            <h2 class="h4"><a href="/en/website-usage-analytics/">Website usage analytics</a></h2>
+            <p>Provides an overview of website usage data, such as the number of visits, users, pageviews, and bounce rates. It also highlights the most frequently used devices and the top countries where users visit the site. The data is updated regularly to reflect the latest activity, helping us understand how people interact with the website and improve the overall experience.</p>
           </section>
           <section class="col-md-6" data-wb-tags="accessibilityInTheGovernmentOfCanada accessibilityStandards notLanding">
             <h2 class="h4"><a href="/en/what-we-heard-report-standard-on-information-and-communication-technology-accessibility-sicta/">What we heard report: Standard on Information and Communication Technology Accessibility (SICTA)</a></h2>
@@ -546,13 +561,14 @@
           </section>
         </div>
       </div>
-      <section class="pagedetails container">
-        <h2 class="wb-inv">Page details</h2>
-        <dl id="wb-dtmd">
-          <dt>Date modified:</dt>
-          <dd><time property="dateModified">2024-09-16</time></dd>
-        </dl>
-      </section>
+    </div>
+    <section class="pagedetails container">
+      <h2 class="wb-inv">Page details</h2>
+      <dl id="wb-dtmd">
+        <dt>Date modified:</dt>
+        <dd><time property="dateModified">2023-11-27</time></dd>
+      </dl>
+    </section>
   </main>
   <aside class="contribute">
     <div class="container">
@@ -566,6 +582,7 @@
             <li class="mrgn-rght-sm"><i class="fas fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a></li>
             <li><i class="fas fa-comments fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a></li>
           </ul>
+          <p><i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i><a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a></p>
         </div>
       </div>
     </div>

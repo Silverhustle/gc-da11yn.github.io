@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title>Ressources additionnelles - Boîte à outils de l&#39;accessibilité numérique</title>
+  <title>Ressources additionnelles- Boîte à outils de l&#39;accessibilité numérique</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta name="description" content="Ressources et outils utiles en matière d&#39;accessibilité du web pour les employés du gouvernement du Canada.">
-  <meta data-source="./src/pages/fr/ressources-additionnelles.md" />
-  <link rel="alternate" hreflang="en" href="../../en/additional-resources/index.html" />
+  <meta name="source-file" content="./src/pages/fr/ressources-additionnelles.md">
+  <link rel="alternate" hreflang="en" href="/gc-da11yn.github.io/en/additional-resources/index.html" />
   <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
-  <link rel="stylesheet" href="../../css/da11yn.css">
+  <link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css">
   <!-- Meta tags -->
   <meta name="author" content="Gouvernement du Canada" />
   <meta name="dcterms.title" content="Ressources additionnelles" />
@@ -21,19 +21,18 @@
   <meta name="dcterms.creator" content="Gouvernement du Canada">
   <meta name="dcterms.language" content="fr" />
   <meta name="dcterms.created" content="2023-08-01">
-  <meta name="dcterms.modified" content="2024-09-16">
+  <meta name="dcterms.modified" content="2025-06-27">
   <meta name="dcterms.subject" content="; " />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
   <script>
     (function(w) {
       "use strict";
-      var dl = "dataLayer";
-      if (w.location.hostname === "a11y.canada.ca" || w.location.hostname === "deploy-preview-335--a11ycanada.netlify.app") {
-        w[dl] = w[dl] || [];
+      if (w.location.hostname === "a11y.canada.ca") {
+        w.dataLayer = w.dataLayer || [];
         w.gtag = function() {
-          w[dl].push(arguments);
-        }
+          w.dataLayer.push(arguments);
+        };
         w.gtag('js', new Date());
         w.gtag('config', 'G-SM9MSHWDVN');
       }
@@ -60,7 +59,7 @@
           <h2 class="wb-inv">Sélection de la langue</h2>
           <ul class="list-inline mrgn-bttm-0">
             <li>
-              <a lang="en" hreflang="en" href="../../en/additional-resources/index.html">
+              <a lang="en" hreflang="en" href="/gc-da11yn.github.io/en/additional-resources/">
                 <span class="hidden-xs" translate="no">English</span>
                 <abbr title="English" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"> en</abbr>
               </a>
@@ -70,7 +69,7 @@
         <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
           <a href="https://www.canada.ca/fr.html" property="url">
             <img src="https://www.canada.ca/etc/designs/canada//wet-boew/assets/sig-blk-fr.svg" alt="Gouvernement du Canada" property="logo" />
-            <span class="wb-inv"> / <span lang="en">Gouvernement du Canada</span></span>
+            <span class="wb-inv"> / <span lang="en">Government of Canada</span></span>
           </a>
           <meta property="name" content="Gouvernement du Canada">
           <meta property="areaServed" typeof="Country" content="Canada" />
@@ -167,14 +166,14 @@
           </li>
           <!-- Second breadcrumb: Locale-based home link -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/fr/">Boîte à outils de l&#39;accessibilité numérique</a>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/fr/">Boîte à outils de l&#39;accessibilité numérique</a>
             <meta property="position" content="2">
           </li>
           <!-- Additional breadcrumbs based on tags and subjects -->
           <!-- Breadcrumbs based on 'subject' -->
           <!-- Breadcrumbs based on 'tags' -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/fr/ressources-et-outils">
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/fr/ressources-et-outils">
               <span property="name">Ressources et outils</span>
             </a>
             <meta property="position" content="3">
@@ -187,7 +186,7 @@
     <div class="home">
       <div class="container p-0 p-sm-3">
         <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-          <h1 property="name" id="wb-cont"> Ressources additionnelles </h1>
+          <h1 property="name" id="wb-cont">Ressources additionnelles </h1>
           <p>Ressources et outils utiles en matière d'accessibilité du web pour les employés du gouvernement du Canada.</p>
         </div>
       </div>
@@ -206,11 +205,11 @@
         <ul>
           <li><a href="#apprentissage">Apprentissage</a>
           </li>
+          <li><a href="#approvisionnement">Approvisionnement</a>
+          </li>
           <li><a href="#developpement">Développement</a>
           </li>
           <li><a href="#politique">Politique</a>
-          </li>
-          <li><a href="#approvisionnement">Approvisionnement</a>
           </li>
           <li><a href="#reunions-et-evenements-virtuels-accessibles">Réunions et événements virtuels accessibles</a>
           </li>
@@ -266,8 +265,19 @@ Le Service numérique canadien s’engage à mettre en place des services access
           <p>Dans cet article, Claudio Luis Vera explique ce qu’il faut garder à l’esprit lors du choix d’un outil de vidéoconférence pour que tous les membres de votre équipe puissent en profiter — notamment ceux avec des handicaps.</p>
         </div>
         <div class="col-md-6">
+          <h3 id="serie-dapprentissage-sur-laccessibilite" tabindex="-1"><a href="https://www.csps-efpc.gc.ca/accessibility-learning-fra.aspx">Série d'apprentissage sur l'accessibilité</a></h3>
+          <p>Chaque fonctionnaire a un rôle à jouer dans la création d'une fonction publique sans obstacles, et la série d'apprentissage sur l'accessibilité vous aidera à comprendre comment vous pouvez favoriser l'inclusion au quotidien en éliminant les obstacles ou en évitant d'en créer de nouveaux pour les personnes en situation de handicap.</p>
+        </div>
+        <div class="col-md-6">
           <h3 id="youtube-apple-accessibilite-en-anglais-seulement" tabindex="-1"><a href="https://www.youtube.com/playlist?list=PLIl2EzNYri0cLtSlZowttih25VnSvWITu">YouTube : Apple : Accessibilité<small> (en anglais seulement)</small></a></h3>
           <p>De l’utilisation de votre iPhone sans voir l’écran, à l’adaptation des gestes à vos besoins physiques, découvrez comment les fonctionnalités d’accessibilité intégrées à vos appareils Apple peuvent vous aider à en faire plus.</p>
+        </div>
+      </div>
+      <h2 id="approvisionnement" tabindex="-1">Approvisionnement</h2>
+      <div class="row wb-eqht gc-srvinfo">
+        <div class="col-md-6">
+          <h3 id="accessibilite-a-services-publics-et-approvisionnement-canada" tabindex="-1"><a href="https://www.canada.ca/fr/services-publics-approvisionnement/organisation/accessibilite.html">Accessibilité à Services publics et Approvisionnement Canada</a></h3>
+          <p>En tant que fournisseur de services communs du gouvernement du Canada, le SPAC s'efforce d'offrir un excellent service aux autres ministères fédéraux. En cherchant à améliorer l'accès à ses programmes et services pour les personnes handicapées, SPAC aide les ministères fédéraux à offrir des programmes et services de haute qualité à tous les Canadiens.</p>
         </div>
       </div>
       <h2 id="developpement" tabindex="-1">Développement</h2>
@@ -281,8 +291,8 @@ Le Service numérique canadien s’engage à mettre en place des services access
           <p>Consultez des articles approfondis sur des principes et des procédés permettant d’écrire de façon inclusive en français et accédez à d’autres ressources portant sur ce sujet</p>
         </div>
         <div class="col-md-6">
-          <h3 id="liste-de-verification-pour-laccessibilite-web" tabindex="-1"><a href="https://bati-itao.github.io/resources/a11ycheck-fr.html">Liste de vérification pour l’accessibilité Web</a></h3>
-          <p>Liste de verification develop par ESDC.</p>
+          <h3 id="verifications-faciles-pour-laccessibilite-du-web" tabindex="-1"><a href="https://bati-itao.github.io/resources/a11ycheck-fr.html">Vérifications faciles pour l’accessibilité du Web</a></h3>
+          <p>Repérer &amp; corriger les problèmes d’accessibilité de base! Outil développé par EDSC - le bureau d’accessibilité TI (<abbr>BATI</abbr>).</p>
         </div>
         <div class="col-md-6">
           <h3 id="methodologie-devaluation-sur-laccessibilite-des-sites-web-niveau-aa-en-anglais-seulement" tabindex="-1"><a href="https://wet-boew.github.io/v4.0-ci/demos/wamethod/wamethod-AA-fr.html">Méthodologie d’évaluation sur l’accessibilité des sites Web (niveau AA)<small> (en anglais seulement)</small></a></h3>
@@ -372,13 +382,6 @@ Le Service numérique canadien s’engage à mettre en place des services access
           <p>Ce document aide les gens à comprendre les principaux points du projet de loi C-81 ; une loi visant à assurer un Canada sans obstacles.</p>
         </div>
       </div>
-      <h2 id="approvisionnement" tabindex="-1">Approvisionnement</h2>
-      <div class="row wb-eqht gc-srvinfo">
-        <div class="col-md-6">
-          <h3 id="accessibilite-a-services-publics-et-approvisionnement-canada" tabindex="-1"><a href="https://www.canada.ca/fr/services-publics-approvisionnement/organisation/accessibilite.html">Accessibilité à Services publics et Approvisionnement Canada</a></h3>
-          <p>En tant que fournisseur de services communs du gouvernement du Canada, le SPAC s'efforce d'offrir un excellent service aux autres ministères fédéraux. En cherchant à améliorer l'accès à ses programmes et services pour les personnes handicapées, SPAC aide les ministères fédéraux à offrir des programmes et services de haute qualité à tous les Canadiens.</p>
-        </div>
-      </div>
       <h2 id="reunions-et-evenements-virtuels-accessibles" tabindex="-1">Réunions et événements virtuels accessibles</h2>
       <p>Les réunions et événements virtuels sont caractérisés par différents formats et différentes tailles, allant de petits ateliers comprenant des participants qui se connaissent à de grandes réunions publiques à planifier. Il est essentiel de veiller à ce que ces réunions et événements soient pleinement accessibles, depuis leur accès jusqu’aux présentations. En planifiant, vous pouvez intégrer l’accessibilité à tous les aspects d’une réunion. Cela permet à tout le monde de pleinement participer, y compris les personnes en situation de handicap.</p>
       <p>Afin de vous aider à offrir une réunion ou une activité virtuelle pleinement accessible, qu’il s’agisse d’une séance de formation, d’une réunion, d’un kiosque ou d’une journée portes ouvertes, le Bureau de l’accessibilité des TI (<abbr>BATI</abbr>) a rassemblé les renseignements les plus pertinents à ce sujet.</p>
@@ -441,13 +444,14 @@ Le Service numérique canadien s’engage à mettre en place des services access
         <li><a href="https://gcintranet.tpsgc-pwgsc.gc.ca/bt-tb/ministeres-departments/traduction-translation/accueil-home-eng.html">Translation Bureau’s language services and tools – PSPC’s GCintranet (tpsgc-pwgsc.gc.ca)<span class="fas fa-external-link-square-alt mrgn-lft-sm mrgn-rght-sm" aria-hidden="true"></span><span class="wb-inv"> Lien interne</span></a></li>
         <li><a href="https://gcintranet.tpsgc-pwgsc.gc.ca/bt-tb/interpretation/accueil-home-fra.html">Services d'interprétation des conférences et d'interprétation en langues des signes<span class="fas fa-external-link-square-alt mrgn-lft-sm mrgn-rght-sm" aria-hidden="true"></span><span class="wb-inv"> Lien interne</span></a></li>
       </ul>
-      <section class="pagedetails container">
-        <h2 class="wb-inv">Détails de la page</h2>
-        <dl id="wb-dtmd">
-          <dt>Date de modification :</dt>
-          <dd><time property="dateModified">2024-09-16</time></dd>
-        </dl>
-      </section>
+    </div>
+    <section class="pagedetails container">
+      <h2 class="wb-inv">Détails de la page</h2>
+      <dl id="wb-dtmd">
+        <dt>Date de modification :</dt>
+        <dd><time property="dateModified">2025-06-27</time></dd>
+      </dl>
+    </section>
   </main>
   <aside class="contribute">
     <div class="container">
@@ -457,10 +461,11 @@ Le Service numérique canadien s’engage à mettre en place des services access
         </div>
         <div class="col-md-7">
           <ul class="list-inline">
-            <li class="mrgn-rght-sm"><i class="fas fa-code fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io">Code source <small>(en anglais seulement)</small></a></li>
-            <li class="mrgn-rght-sm"><i class="fas fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Problèmes <span lang="en">(Issues)</span><small>(en anglais seulement)</small></a></li>
-            <li><i class="fas fa-comments fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions <small>(en anglais seulement)</small></a></li>
+            <li class="mrgn-rght-sm"><i class="fas fa-code fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io">Code source</a></li>
+            <li class="mrgn-rght-sm"><i class="fas fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Problèmes</a></li>
+            <li><i class="fas fa-comments fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a></li>
           </ul>
+          <p><i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i><a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribuer%20%C3%A0%20la%20Bo%C3%AEte%20%C3%A0%20outils%20de%20l&#39;accessibilit%C3%A9%20num%C3%A9rique">Contactez la Boîte à outils de l&#39;accessibilité numérique par courriel</a></p>
         </div>
       </div>
     </div>
@@ -513,7 +518,7 @@ Le Service numérique canadien s’engage à mettre en place des services access
           </ul>
         </nav>
         <div class="wtrmrk align-self-end">
-          <img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+          <img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" alt="Symbole du gouvernement du Canada" />
         </div>
       </div>
     </div>

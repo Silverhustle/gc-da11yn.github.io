@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title> - </title>
+  <title>- </title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta name="description" content="">
-  <meta data-source="./src/links/_template.md" />
+  <meta name="source-file" content="./src/links/_template.md">
   <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
-  <link rel="stylesheet" href="../../css/da11yn.css">
+  <link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css">
   <!-- Meta tags -->
   <meta name="author" content="" />
   <meta name="dcterms.title" content="" />
@@ -20,19 +20,18 @@
   <meta name="dcterms.creator" content="">
   <meta name="dcterms.language" content="" />
   <meta name="dcterms.created" content="2023-08-01">
-  <meta name="dcterms.modified" content="2024-09-16">
+  <meta name="dcterms.modified" content="2024-04-26">
   <meta name="dcterms.subject" content="" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
   <script>
     (function(w) {
       "use strict";
-      var dl = "dataLayer";
-      if (w.location.hostname === "a11y.canada.ca" || w.location.hostname === "deploy-preview-335--a11ycanada.netlify.app") {
-        w[dl] = w[dl] || [];
+      if (w.location.hostname === "a11y.canada.ca") {
+        w.dataLayer = w.dataLayer || [];
         w.gtag = function() {
-          w[dl].push(arguments);
-        }
+          w.dataLayer.push(arguments);
+        };
         w.gtag('js', new Date());
         w.gtag('config', 'G-SM9MSHWDVN');
       }
@@ -58,7 +57,7 @@
         <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
           <a href="" property="url">
             <img src="https://www.canada.ca/etc/designs/canada//wet-boew/assets/sig-blk-.svg" alt="" property="logo" />
-            <span class="wb-inv"> / <span lang="en"></span></span>
+            <span class="wb-inv"> / <span lang="en">Government of Canada</span></span>
           </a>
           <meta property="name" content="">
           <meta property="areaServed" typeof="Country" content="Canada" />
@@ -156,7 +155,7 @@
           </li>
           <!-- Second breadcrumb: Locale-based home link -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="//"></a>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io//"></a>
             <meta property="position" content="2">
           </li>
           <!-- Additional breadcrumbs based on tags and subjects -->
@@ -177,13 +176,14 @@
       </div>
     </div>
     <div class="container">
-      <section class="pagedetails container">
-        <h2 class="wb-inv"></h2>
-        <dl id="wb-dtmd">
-          <dt></dt>
-          <dd><time property="dateModified">2024-09-16</time></dd>
-        </dl>
-      </section>
+    </div>
+    <section class="pagedetails container">
+      <h2 class="wb-inv"></h2>
+      <dl id="wb-dtmd">
+        <dt></dt>
+        <dd><time property="dateModified">2024-04-26</time></dd>
+      </dl>
+    </section>
   </main>
   <aside class="contribute">
     <div class="container">
@@ -197,6 +197,7 @@
             <li class="mrgn-rght-sm"><i class="fas fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/"></a></li>
             <li><i class="fas fa-comments fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions"></a></li>
           </ul>
+          <p><i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i><a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject="></a></p>
         </div>
       </div>
     </div>
@@ -249,7 +250,7 @@
           </ul>
         </nav>
         <div class="wtrmrk align-self-end">
-          <img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada" />
+          <img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" alt="" />
         </div>
       </div>
     </div>

@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title>PDF accessibility checklist - Digital Accessibility Toolkit</title>
+  <title>PDF accessibility checklist- Digital Accessibility Toolkit</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta name="description" content="Here you can find different questions to help you to know if your pdf document is accessible or not.">
-  <meta data-source="./src/pages/en/pdf-accessibility-checklist.md" />
-  <link rel="alternate" hreflang="fr" href="../../fr/liste-de-verification-de-laccessibilite-des-documents-pdf/index.html" />
+  <meta name="source-file" content="./src/pages/en/pdf-accessibility-checklist.md">
+  <link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/liste-de-verification-de-laccessibilite-des-documents-pdf/index.html" />
   <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
-  <link rel="stylesheet" href="../../css/da11yn.css">
+  <link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css">
   <!-- Meta tags -->
   <meta name="author" content="Government of Canada" />
   <meta name="dcterms.title" content="PDF accessibility checklist" />
@@ -21,19 +21,18 @@
   <meta name="dcterms.creator" content="Government of Canada">
   <meta name="dcterms.language" content="en" />
   <meta name="dcterms.created" content="2023-08-01">
-  <meta name="dcterms.modified" content="2024-09-16">
-  <meta name="dcterms.subject" content="How to’s;Create document; " />
+  <meta name="dcterms.modified" content="2025-06-27">
+  <meta name="dcterms.subject" content="How-tos;Create document; " />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
   <script>
     (function(w) {
       "use strict";
-      var dl = "dataLayer";
-      if (w.location.hostname === "a11y.canada.ca" || w.location.hostname === "deploy-preview-335--a11ycanada.netlify.app") {
-        w[dl] = w[dl] || [];
+      if (w.location.hostname === "a11y.canada.ca") {
+        w.dataLayer = w.dataLayer || [];
         w.gtag = function() {
-          w[dl].push(arguments);
-        }
+          w.dataLayer.push(arguments);
+        };
         w.gtag('js', new Date());
         w.gtag('config', 'G-SM9MSHWDVN');
       }
@@ -60,7 +59,7 @@
           <h2 class="wb-inv">Language selection</h2>
           <ul class="list-inline mrgn-bttm-0">
             <li>
-              <a lang="fr" hreflang="fr" href="../../fr/liste-de-verification-de-laccessibilite-des-documents-pdf/index.html">
+              <a lang="fr" hreflang="fr" href="/gc-da11yn.github.io/fr/liste-de-verification-de-laccessibilite-des-documents-pdf/">
                 <span class="hidden-xs" translate="no">Français</span>
                 <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"> fr</abbr>
               </a>
@@ -70,7 +69,7 @@
         <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
           <a href="https://www.canada.ca/en.html" property="url">
             <img src="https://www.canada.ca/etc/designs/canada//wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" property="logo" />
-            <span class="wb-inv"> / <span lang="fr">Government of Canada</span></span>
+            <span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span></span>
           </a>
           <meta property="name" content="Government of Canada">
           <meta property="areaServed" typeof="Country" content="Canada" />
@@ -167,20 +166,20 @@
           </li>
           <!-- Second breadcrumb: Locale-based home link -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/">Digital Accessibility Toolkit</a>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</a>
             <meta property="position" content="2">
           </li>
           <!-- Additional breadcrumbs based on tags and subjects -->
           <!-- Breadcrumbs based on 'subject' -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/how-tos">
-              <span property="name">How to’s</span>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/how-tos">
+              <span property="name">How-tos</span>
             </a>
             <meta property="position" content="3">
           </li>
           <!-- Breadcrumbs based on 'tags' -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/create-document">
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/create-document">
               <span property="name">Create document</span>
             </a>
             <meta property="position" content="4">
@@ -193,7 +192,7 @@
     <div class="home">
       <div class="container p-0 p-sm-3">
         <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-          <h1 property="name" id="wb-cont"> PDF accessibility checklist </h1>
+          <h1 property="name" id="wb-cont">PDF accessibility checklist </h1>
           <p>Here you can find different questions to help you to know if your pdf document is accessible or not.</p>
         </div>
       </div>
@@ -209,16 +208,18 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <a class="gc-dwnld-lnk" href="../../docs/PDF_Accessibility_Checklist.pdf" download="pdf-accessibility-checklist">
+          <a class="gc-dwnld-lnk" href="/gc-da11yn.github.io/docs/PDF_Accessibility_Checklist.pdf" download="pdf-accessibility-checklist">
             <div class="well gc-dwnld">
               <div class="row">
                 <div class="col-xs-4">
-                  <p><img class="img-responsive thumbnail gc-dwnld-img" src="../../img/doc.png" alt="" /></p>
+                  <p>
+                    <img class="img-responsive thumbnail gc-dwnld-img" src="/gc-da11yn.github.io/img/doc.png" alt="" />
+                  </p>
                 </div>
                 <div class="col-xs-8">
                   <p class="gc-dwnld-txt">
                     <span>PDF accessibility checklist</span>
-                    <span class="gc-dwnld-info">(<i class="fas fa-file-pdf mrg-rght-sm" aria-hidden="true"></i> <abbr title="Portable Document Format">PDF</abbr>, 324 <abbr title="KiloByte">KB</abbr>)</span>
+                    <span class="gc-dwnld-info"> (<i class="fas fa-file-pdf mrg-rght-sm" aria-hidden="true"><span class="wb-inv">PDF Document</span></i> 10.8 <abbr title="KiloByte">KB</abbr>) </span>
                   </p>
                 </div>
               </div>
@@ -241,7 +242,7 @@
         <li><a href="https://www.foxitsoftware.com/support/tutorial/?from=foxit%20phantompdf_business&amp;utm_source=client-app">Foxit PDF Editor Instructional Tutorials</a></li>
         <li><a href="https://www.foxitsoftware.com/blog/use-action-wizard-to-automatically-make-pdfs-508-compliant/">Foxit: Use Action Wizard to automatically make PDFs 508 compliant</a></li>
         <li><a href="https://webaim.org/techniques/foxit/">WebAIM: Foxit and PDF Accessibility</a></li>
-        <li><a href="../../en/dos-and-donts-for-developing-online-courses">Do's and Dont's for Accessible Designs</a></li>
+        <li><a href="/gc-da11yn.github.io/en/dos-and-donts-for-developing-online-courses">Do's and Dont's for Accessible Designs</a></li>
       </ul>
       <h2 id="pdf-accessibility-checklist-instructions" tabindex="-1">PDF Accessibility Checklist Instructions</h2>
       <p>Please complete the <strong>PDF Accessibility Checklist</strong>. This is to ensure common accessibility errors are resolved.</p>
@@ -297,13 +298,14 @@
         <dt>Tags:</dt>
         <dd>The structured, textual representation of the PDF content that is accessed by screen readers, to read the document out-loud.</dd>
       </dl>
-      <section class="pagedetails container">
-        <h2 class="wb-inv">Page details</h2>
-        <dl id="wb-dtmd">
-          <dt>Date modified:</dt>
-          <dd><time property="dateModified">2024-09-16</time></dd>
-        </dl>
-      </section>
+    </div>
+    <section class="pagedetails container">
+      <h2 class="wb-inv">Page details</h2>
+      <dl id="wb-dtmd">
+        <dt>Date modified:</dt>
+        <dd><time property="dateModified">2025-06-27</time></dd>
+      </dl>
+    </section>
   </main>
   <aside class="contribute">
     <div class="container">
@@ -317,6 +319,7 @@
             <li class="mrgn-rght-sm"><i class="fas fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a></li>
             <li><i class="fas fa-comments fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a></li>
           </ul>
+          <p><i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i><a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a></p>
         </div>
       </div>
     </div>

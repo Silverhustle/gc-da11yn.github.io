@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title>Making Accessible Emails - Digital Accessibility Toolkit</title>
+  <title>Making Accessible Emails- Digital Accessibility Toolkit</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta name="description" content="Accessible email is important for people with disabilities but also for everyone. Find out how to create an accessible email in outlook.">
-  <meta data-source="./src/pages/en/making-accessible-emails.md" />
-  <link rel="alternate" hreflang="fr" href="../../fr/rendre-vos-courriels-accessibles/index.html" />
+  <meta name="source-file" content="./src/pages/en/making-accessible-emails.md">
+  <link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/rendre-vos-courriels-accessibles/index.html" />
   <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
-  <link rel="stylesheet" href="../../css/da11yn.css">
+  <link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css">
   <!-- Meta tags -->
   <meta name="author" content="Government of Canada" />
   <meta name="dcterms.title" content="Making Accessible Emails" />
@@ -21,19 +21,18 @@
   <meta name="dcterms.creator" content="Government of Canada">
   <meta name="dcterms.language" content="en" />
   <meta name="dcterms.created" content="2023-08-01">
-  <meta name="dcterms.modified" content="2024-09-16">
+  <meta name="dcterms.modified" content="2025-07-21">
   <meta name="dcterms.subject" content="; ; " />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
   <script>
     (function(w) {
       "use strict";
-      var dl = "dataLayer";
-      if (w.location.hostname === "a11y.canada.ca" || w.location.hostname === "deploy-preview-335--a11ycanada.netlify.app") {
-        w[dl] = w[dl] || [];
+      if (w.location.hostname === "a11y.canada.ca") {
+        w.dataLayer = w.dataLayer || [];
         w.gtag = function() {
-          w[dl].push(arguments);
-        }
+          w.dataLayer.push(arguments);
+        };
         w.gtag('js', new Date());
         w.gtag('config', 'G-SM9MSHWDVN');
       }
@@ -60,7 +59,7 @@
           <h2 class="wb-inv">Language selection</h2>
           <ul class="list-inline mrgn-bttm-0">
             <li>
-              <a lang="fr" hreflang="fr" href="../../fr/rendre-vos-courriels-accessibles/index.html">
+              <a lang="fr" hreflang="fr" href="/gc-da11yn.github.io/fr/rendre-vos-courriels-accessibles/">
                 <span class="hidden-xs" translate="no">Français</span>
                 <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"> fr</abbr>
               </a>
@@ -70,7 +69,7 @@
         <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
           <a href="https://www.canada.ca/en.html" property="url">
             <img src="https://www.canada.ca/etc/designs/canada//wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" property="logo" />
-            <span class="wb-inv"> / <span lang="fr">Government of Canada</span></span>
+            <span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span></span>
           </a>
           <meta property="name" content="Government of Canada">
           <meta property="areaServed" typeof="Country" content="Canada" />
@@ -167,15 +166,15 @@
           </li>
           <!-- Second breadcrumb: Locale-based home link -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/">Digital Accessibility Toolkit</a>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</a>
             <meta property="position" content="2">
           </li>
           <!-- Additional breadcrumbs based on tags and subjects -->
           <!-- Breadcrumbs based on 'subject' -->
           <!-- Breadcrumbs based on 'tags' -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/how-tos">
-              <span property="name">How to’s</span>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/how-tos">
+              <span property="name">How-tos</span>
             </a>
             <meta property="position" content="3">
           </li>
@@ -187,7 +186,7 @@
     <div class="home">
       <div class="container p-0 p-sm-3">
         <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-          <h1 property="name" id="wb-cont"> Making Accessible Emails </h1>
+          <h1 property="name" id="wb-cont">Making Accessible Emails </h1>
           <p>Accessible email is important for people with disabilities but also for everyone. Find out how to create an accessible email in outlook.</p>
         </div>
       </div>
@@ -243,7 +242,7 @@
         <li>go to <strong>Compose messages</strong> drop-down list (<strong>Alt + C</strong>) and choose <strong>HTML</strong></li>
         <li>select <strong>OK</strong>.</li>
       </ol>
-      <p><img src="../../img/en/making-accessible-emails-1.png" alt="" /></p>
+      <p><img src="/gc-da11yn.github.io/img/en/making-accessible-emails-1.png" alt="" /></p>
       <h2 id="bilingual-message-if-applicable" tabindex="-1">Bilingual message (if applicable)</h2>
       <p>Whenever possible, avoid creating bilingual emails. Bilingual emails can introduce a lot of accessibility and usability challenges for a wide range of users.</p>
       <p>If you must use bilingual emails, be sure to make them as accessible as possible.</p>
@@ -256,10 +255,23 @@
         </li>
       </ul>
       <h3 id="setting-a-language" tabindex="-1">Setting a language</h3>
-      <p>If you set an entire document to English but there are some sections that have text written in French, English screen readers will try to pronounce the French information, resulting in gibberish sounds.</p>
-      <ul>
-        <li>Perform language markup to help screen readers read French text properly. Use this for changing the proofing language of sections of a document 1. Set Proofing Language (<strong>Alt, V, U, L</strong>). 2. Highlight the text that you want set to a different language. 3. Select the Review tab; then select <strong>Language</strong> &gt; <strong>Set Proofing Language.</strong></li>
-      </ul>
+      <p>Start by setting the document’s primary language:</p>
+      <ol>
+        <li>Go to the <strong>Review</strong> tab on the Ribbon.</li>
+        <li>Open the <strong>Language</strong> button, then <strong>select Set Proofing Language (Alt, R, U, L)</strong>.</li>
+        <li>In the “Language” dialog box, make sure to set the <strong>Change proofing language for</strong> radio button to <strong>Current document</strong>.</li>
+        <li>From the list of available languages, select the main language used in the document.</li>
+      </ol>
+      <p>If certain sections of the document are written in a different language, screen readers configured for the primary language may mispronounce the text in the other language, resulting in unintelligible output.</p>
+      <p>To ensure screen readers properly recognize and pronounce text in different languages, perform language markup and adjust the proofing language for those specific sections. Here’s how to do it:</p>
+      <ol>
+        <li>Highlight the text that you want to set to a different language.</li>
+        <li>Go to the <strong>Review</strong> tab.</li>
+        <li>Open the <strong>Language</strong> button, then choose <strong>Set Proofing Language (Alt, R, U, L)</strong>.</li>
+        <li>In the “Language” dialog box, make sure to set the <strong>Change proofing language for</strong> radio button to <strong>Selected text</strong>.</li>
+        <li>From the list of available languages, select the appropriate one for the highlighted text.</li>
+      </ol>
+      <p>By applying these steps, you enable accurate language recognition for both screen readers and spellcheckers, enhancing accessibility and accuracy in your document.</p>
       <h2 id="plain-language" tabindex="-1">Plain language</h2>
       <p>Avoid overly complex writing styles.</p>
       <ul>
@@ -274,7 +286,6 @@
       <h3 id="resources" tabindex="-1">Resources:</h3>
       <ul>
         <li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#toc6">Canada.ca Content Style Guide—Plain Language</a></li>
-        <li><a href="http://en.copian.ca/library/learning/nwt/writread/writefor.pdf" download>Write for your Reader—A plain language handbook</a></li>
         <li><a href="https://www.nwtliteracy.ca/sites/default/files/resources/practice.pdf" download>Putting plain language into practice</a></li>
         <li><a href="https://www.nwtliteracy.ca/sites/default/files/resources/136648a_nwt_literacy_audit_tool.pdf" download>Plain Language Audit Tool—A checklist to review documents</a></li>
       </ul>
@@ -288,8 +299,8 @@
       <h3 id="using-a-style" tabindex="-1">Using a style</h3>
       <p>The Styles pane is on the Format Text tab. Highlight the text that you want to change, for example, a heading in your message.</p>
       <p>To access the Styles pane, select the <strong>expansion arrow (Alt, H, F, Y)</strong> and the Styles pane will open. Select <strong>Title</strong>. The text will be formatted to the Title style and highlighted in the Styles pane.</p>
-      <p><img src="../../img/en/making-accessible-emails-3.png" alt="" /></p>
-      <p><img src="../../img/en/making-accessible-emails-4.png" alt="" /></p>
+      <p><img src="/gc-da11yn.github.io/img/en/making-accessible-emails-3.png" alt="" /></p>
+      <p><img src="/gc-da11yn.github.io/img/en/making-accessible-emails-4.png" alt="" /></p>
       <h3 id="modify-a-style" tabindex="-1">Modify a style</h3>
       <ol>
         <li>Place your cursor in the text with the style you want to modify.</li>
@@ -474,13 +485,14 @@
         <li>Press the <strong>Windows key</strong> (⊞) <strong>+</strong> <strong>Control + Enter</strong> to start/stop Narrator.</li>
         <li>Navigating using the keyboard, the email content can be tested to verify if a screen reader properly identifies your content.</li>
       </ul>
-      <section class="pagedetails container">
-        <h2 class="wb-inv">Page details</h2>
-        <dl id="wb-dtmd">
-          <dt>Date modified:</dt>
-          <dd><time property="dateModified">2024-09-16</time></dd>
-        </dl>
-      </section>
+    </div>
+    <section class="pagedetails container">
+      <h2 class="wb-inv">Page details</h2>
+      <dl id="wb-dtmd">
+        <dt>Date modified:</dt>
+        <dd><time property="dateModified">2025-07-21</time></dd>
+      </dl>
+    </section>
   </main>
   <aside class="contribute">
     <div class="container">
@@ -494,6 +506,7 @@
             <li class="mrgn-rght-sm"><i class="fas fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a></li>
             <li><i class="fas fa-comments fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a></li>
           </ul>
+          <p><i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i><a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a></p>
         </div>
       </div>
     </div>

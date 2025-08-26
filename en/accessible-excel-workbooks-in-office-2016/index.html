@@ -5,15 +5,15 @@
   <meta charset="utf-8">
   <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
 		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-  <title>Accessible Excel workbooks in Office 2016 - Digital Accessibility Toolkit</title>
+  <title>Accessible Excel workbooks in Office 2016- Digital Accessibility Toolkit</title>
   <meta content="width=device-width,initial-scale=1" name="viewport">
   <meta name="description" content="Accessible practices for Microsoft Excel 2016 document creation.">
-  <meta data-source="./src/pages/en/ms-office/2016/accessible-excel-workbooks-in-office-2016.md" />
-  <link rel="alternate" hreflang="fr" href="../../fr/classeurs-excel-accessibles-dans-office-2016/index.html" />
+  <meta name="source-file" content="./src/pages/en/ms-office/2016/accessible-excel-workbooks-in-office-2016.md">
+  <link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/classeurs-excel-accessibles-dans-office-2016/index.html" />
   <link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
-  <link rel="stylesheet" href="../../css/da11yn.css">
+  <link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css">
   <!-- Meta tags -->
   <meta name="author" content="Government of Canada" />
   <meta name="dcterms.title" content="Accessible Excel workbooks in Office 2016" />
@@ -21,19 +21,18 @@
   <meta name="dcterms.creator" content="Government of Canada">
   <meta name="dcterms.language" content="en" />
   <meta name="dcterms.created" content="2023-08-01">
-  <meta name="dcterms.modified" content="2024-09-16">
-  <meta name="dcterms.subject" content="How to’s;Create document; How to create accessible documents in Office 2016; " />
+  <meta name="dcterms.modified" content="2025-06-27">
+  <meta name="dcterms.subject" content="How-tos;Create document; How to create accessible documents in Office 2016; " />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
   <script>
     (function(w) {
       "use strict";
-      var dl = "dataLayer";
-      if (w.location.hostname === "a11y.canada.ca" || w.location.hostname === "deploy-preview-335--a11ycanada.netlify.app") {
-        w[dl] = w[dl] || [];
+      if (w.location.hostname === "a11y.canada.ca") {
+        w.dataLayer = w.dataLayer || [];
         w.gtag = function() {
-          w[dl].push(arguments);
-        }
+          w.dataLayer.push(arguments);
+        };
         w.gtag('js', new Date());
         w.gtag('config', 'G-SM9MSHWDVN');
       }
@@ -60,7 +59,7 @@
           <h2 class="wb-inv">Language selection</h2>
           <ul class="list-inline mrgn-bttm-0">
             <li>
-              <a lang="fr" hreflang="fr" href="../../fr/classeurs-excel-accessibles-dans-office-2016/index.html">
+              <a lang="fr" hreflang="fr" href="/gc-da11yn.github.io/fr/classeurs-excel-accessibles-dans-office-2016/">
                 <span class="hidden-xs" translate="no">Français</span>
                 <abbr title="Français" translate="no" class="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"> fr</abbr>
               </a>
@@ -70,7 +69,7 @@
         <div class="brand col-xs-9 col-sm-5 col-md-4" property="publisher" typeof="GovernmentOrganization">
           <a href="https://www.canada.ca/en.html" property="url">
             <img src="https://www.canada.ca/etc/designs/canada//wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" property="logo" />
-            <span class="wb-inv"> / <span lang="fr">Government of Canada</span></span>
+            <span class="wb-inv"> / <span lang="fr">Gouvernement du Canada</span></span>
           </a>
           <meta property="name" content="Government of Canada">
           <meta property="areaServed" typeof="Country" content="Canada" />
@@ -167,26 +166,26 @@
           </li>
           <!-- Second breadcrumb: Locale-based home link -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/">Digital Accessibility Toolkit</a>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</a>
             <meta property="position" content="2">
           </li>
           <!-- Additional breadcrumbs based on tags and subjects -->
           <!-- Breadcrumbs based on 'subject' -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/how-tos">
-              <span property="name">How to’s</span>
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/how-tos">
+              <span property="name">How-tos</span>
             </a>
             <meta property="position" content="3">
           </li>
           <!-- Breadcrumbs based on 'tags' -->
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/create-document">
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/create-document">
               <span property="name">Create document</span>
             </a>
             <meta property="position" content="4">
           </li>
           <li property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="/en/how-to-create-accessible-documents-in-office-2016">
+            <a property="item" typeof="WebPage" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016">
               <span property="name">How to create accessible documents in Office 2016</span>
             </a>
             <meta property="position" content="5">
@@ -199,7 +198,7 @@
     <div class="home">
       <div class="container p-0 p-sm-3">
         <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-          <h1 property="name" id="wb-cont"> Accessible Excel workbooks in Office 2016 </h1>
+          <h1 property="name" id="wb-cont">Accessible Excel workbooks in Office 2016 </h1>
           <p>Accessible practices for Microsoft Excel 2016 document creation.</p>
         </div>
       </div>
@@ -208,28 +207,28 @@
       <div class="gc-stp-stp">
         <div class="toc row mrgn-tp-lg">
           <ul class="wb-eqht-grd">
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block"> in Office 2016</small></a></li>
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block"> in Office 2016</small></a></li>
             <li class="col-md-4 col-sm-6" aria-current="page"><a class="list-group-item active">
                 <i class="fas fa-lg fa-file-excel" aria-hidden="true"></i> Accessible Excel workbooks <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-pdf-documents-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-office-2016/">
                 <i class="fas fa-lg fa-file-pdf" aria-hidden="true"></i> Accessible PDF documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-powerpoint-presentations-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-office-2016/">
                 <i class="fas fa-lg fa-file-powerpoint" aria-hidden="true"></i> Accessible PowerPoint presentations <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-visio-drawings-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
                 <i class="fas fa-lg fa-project-diagram" aria-hidden="true"></i> Accessible Visio drawings <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-word-documents-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
                 <i class="fas fa-lg fa-file-word" aria-hidden="true"></i> Accessible Word documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
           </ul>
         </div>
       </div>
       <div class="well">
-        <p class="mrgn-tp-md">Looking for the Microsoft 365 version? Try <a href="/en/accessible-excel-workbooks-in-microsoft-365/">Accessible Excel workbooks <small><strong> in Microsoft 365</strong></small></a></p>
+        <p class="mrgn-tp-md">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-microsoft-365/">Accessible Excel workbooks <small><strong> in Microsoft 365</strong></small></a></p>
       </div>
       <h2 id="accessibility-checker" tabindex="-1">Accessibility Checker</h2>
       <p>Microsoft Office (Word, Excel, Power Point) provides a built-in accessibility validator. The checker does not identify all issues, but looks for things such as: missing alternative text, duplicate slide titles, and potential reading order issues.</p>
       <div class="row">
         <div class="col-md-7">
-          <img class="img-responsive" src="../../img/en/office2016/excel-01.jpg" alt="Screenshot of Check for Issues menu">
+          <img class="img-responsive" src="/gc-da11yn.github.io/img/en/office2016/excel-01.jpg" alt="Screenshot of Check for Issues menu">
         </div>
       </div>
       <p>How to use the Accessibility Checker:</p>
@@ -267,7 +266,7 @@
       </ol>
       <div class="row">
         <div class="col-md-7">
-          <img class="img-responsive" src="../../img/en/office2016/excel-02.jpg" alt="Screenshot of Format Picture sidebar" />
+          <img class="img-responsive" src="/gc-da11yn.github.io/img/en/office2016/excel-02.jpg" alt="Screenshot of Format Picture sidebar" />
         </div>
       </div>
       <h3 id="charts-and-diagrams" tabindex="-1">Charts and diagrams</h3>
@@ -297,7 +296,7 @@
       </ol>
       <div class="row">
         <div class="col-md-7">
-          <img class="img-responsive" src="../../img/en/office2016/excel-03.jpg" alt="Screenshot of Insert Hyperlink dialog" />
+          <img class="img-responsive" src="/gc-da11yn.github.io/img/en/office2016/excel-03.jpg" alt="Screenshot of Insert Hyperlink dialog" />
         </div>
       </div>
       <h2 id="additional-resources" tabindex="-1">Additional resources</h2>
@@ -308,29 +307,29 @@
       <div class="gc-stp-stp">
         <div class="toc row mrgn-tp-lg">
           <ul class="wb-eqht-grd">
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block"> in Office 2016</small></a></li>
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block"> in Office 2016</small></a></li>
             <li class="col-md-4 col-sm-6" aria-current="page"><a class="list-group-item active">
                 <i class="fas fa-lg fa-file-excel" aria-hidden="true"></i> Accessible Excel workbooks <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-pdf-documents-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-office-2016/">
                 <i class="fas fa-lg fa-file-pdf" aria-hidden="true"></i> Accessible PDF documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-powerpoint-presentations-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-office-2016/">
                 <i class="fas fa-lg fa-file-powerpoint" aria-hidden="true"></i> Accessible PowerPoint presentations <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-visio-drawings-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
                 <i class="fas fa-lg fa-project-diagram" aria-hidden="true"></i> Accessible Visio drawings <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
-            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/en/accessible-word-documents-in-office-2016/">
+            <li class="col-md-4 col-sm-6"><a class="list-group-item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
                 <i class="fas fa-lg fa-file-word" aria-hidden="true"></i> Accessible Word documents <small class="visible-xs-inline visible-sm-block visible-md-block visible-lg-block">in Office 2016</small></a></li>
           </ul>
         </div>
       </div>
       <div class="well">
-        <p class="mrgn-tp-md">Looking for the Microsoft 365 version? Try <a href="/en/accessible-excel-workbooks-in-microsoft-365/">Accessible Excel workbooks <small><strong> in Microsoft 365</strong></small></a></p>
+        <p class="mrgn-tp-md">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-microsoft-365/">Accessible Excel workbooks <small><strong> in Microsoft 365</strong></small></a></p>
       </div>
     </div>
     <section class="pagedetails container">
       <h2 class="wb-inv">Page details</h2>
       <dl id="wb-dtmd">
         <dt>Date modified:</dt>
-        <dd><time property="dateModified">2024-09-16</time></dd>
+        <dd><time property="dateModified">2025-06-27</time></dd>
       </dl>
     </section>
   </main>
@@ -346,6 +345,7 @@
             <li class="mrgn-rght-sm"><i class="fas fa-exclamation-circle fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a></li>
             <li><i class="fas fa-comments fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a></li>
           </ul>
+          <p><i class="fas fa-envelope fa-lg fa-fw" aria-hidden="true"></i><a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a></p>
         </div>
       </div>
     </div>
